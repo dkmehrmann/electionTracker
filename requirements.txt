@@ -7,11 +7,11 @@ brotlipy==0.7.0
 cached-property==1.5.2
 cement==2.8.2
 certifi==2020.6.20
-cffi @ file:///opt/concourse/worker/volumes/live/74b22aae-8eb9-44eb-6c00-a8a07af62b36/volume/cffi_1600699174113/work
+cffi==1.14.3
 chardet==3.0.4
 click==7.1.2
 colorama==0.4.3
-cryptography @ file:///opt/concourse/worker/volumes/live/449c9d42-da39-4138-6bf0-843317a1ad24/volume/cryptography_1601046862310/work
+cryptography==3.1.1
 docker==4.3.1
 docker-compose==1.25.5
 dockerpty==0.4.1
@@ -29,13 +29,14 @@ MarkupSafe==1.1.1
 mkl-fft==1.2.0
 mkl-random==1.1.1
 mkl-service==2.3.0
-numpy @ file:///opt/concourse/worker/volumes/live/40d975a3-7e82-44c8-53df-feccdbce8b96/volume/numpy_and_numpy_base_1596233859108/work
-pandas @ file:///opt/concourse/worker/volumes/live/59754b01-e55a-441c-59b5-4878e3ad9d22/volume/pandas_1601567303900/work
+numpy==1.19.1
+pandas==1.1.2
 paramiko==2.7.2
 pathspec==0.5.9
-pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+pip==20.2.3
+pycparser==2.20
 PyNaCl==1.4.0
-pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+pyOpenSSL==19.1.0
 pyrsistent==0.17.3
 PySocks==1.7.1
 python-dateutil==2.8.0
@@ -43,6 +44,7 @@ pytz==2020.1
 PyYAML==5.3.1
 requests==2.20.1
 semantic-version==2.5.0
+setuptools==49.6.0.post20200925
 six==1.11.0
 termcolor==1.1.0
 texttable==1.6.3
@@ -50,4 +52,5 @@ urllib3==1.24.3
 wcwidth==0.1.9
 websocket-client==0.57.0
 Werkzeug==1.0.1
+wheel==0.35.1
 zipp==3.2.0
