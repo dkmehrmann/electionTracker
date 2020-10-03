@@ -26,8 +26,6 @@ Jinja2==2.11.2
 jmespath==0.10.0
 jsonschema==3.2.0
 MarkupSafe==1.1.1
-mkl-random==1.1.1
-mkl-service==2.3.0
 numpy==1.19.1
 pandas==1.1.2
 paramiko==2.7.2
@@ -43,7 +41,7 @@ pytz==2020.1
 PyYAML==5.3.1
 requests==2.20.1
 semantic-version==2.5.0
-setuptools==49.6.0.post20200925
+setuptools==49.6.0
 six==1.11.0
 termcolor==1.1.0
 texttable==1.6.3
