@@ -26,7 +26,6 @@ Jinja2==2.11.2
 jmespath==0.10.0
 jsonschema==3.2.0
 MarkupSafe==1.1.1
-mkl-fft==1.2.0
 mkl-random==1.1.1
 mkl-service==2.3.0
 numpy==1.19.1
