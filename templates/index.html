@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Election Tracker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+
+</head>
+<body>
+    <div style="position:absolute; top:60px; left:10px; width:800px; height:800px;">
+        <canvas id="myChart" width="400" height="300"></canvas>
+    </div>
+    <script>
+    var graphData = {{ data.chart_data | safe }}
+
+    // Line chart
+    new Chart(document.getElementById("myChart"), {
+      type: 'line',
+      data: {
+        datasets: [{
+            data: graphData['538'],
+            label: "538",
+            borderColor: "#3e95cd",
+            fill: false
+          }, {
+            data: graphData['predictit'],
+            label: "PredictIt",
+            borderColor: "#8e5ea2",
+            fill: false
+          }, {
+            data: graphData['GJP'],
+            label: "Good Judgment Project",
+            borderColor: "#3cba9f",
+            fill: false
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Biden Win Probabilities - Last 90 Days'
+        },
+        hover: {
+         mode: 'index',
+         intersect: true
+        },
+        scales: {
+            xAxes: [{
+                type: 'time',
+                time: {
+                    unit: 'week'
+                }
+            }]
+        }
+      }
+    });
+
+    </script>
+</body>
+</html>
